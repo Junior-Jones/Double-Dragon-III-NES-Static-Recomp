@@ -1,0 +1,37 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Double Dragon III: The Sacred Stones",
+  "project": "Double Dragon III (NES) Static Recomp",
+  "system": "NES",
+  "type": "recomp",
+  "original": {
+    "region": "USA"
+  },
+  "status": "released",
+  "targets": [
+    "Windows"
+  ],
+  "toolchain": "Unspecified",
+  "approach": "Custom static recompilation into fixed generated C semantics, with a native Windows frontend and game-specific NES runtime.",
+  "maintainers": [
+    {
+      "name": "Junior-Jones",
+      "link": "https://github.com/Junior-Jones"
+    }
+  ],
+  "links": [
+    {
+      "label": "Repository",
+      "url": "https://github.com/Junior-Jones/Double-Dragon-III-NES-Static-Recomp"
+    },
+    {
+      "label": "Running and building instructions",
+      "url": "https://github.com/Junior-Jones/Double-Dragon-III-NES-Static-Recomp/blob/main/README.md"
+    },
+    {
+      "label": "Windows x64 release",
+      "url": "https://github.com/Junior-Jones/Double-Dragon-III-NES-Static-Recomp/releases/tag/v1.0.0"
+    }
+  ],
+  "notes": "Version 1.0.0 is a portable Windows x64 release with two-player input, live video and audio, snapshots and screenshots. Core coverage reaches the Mission Four transition. Missions Four and Five and the endings are not yet confirmed complete. Audio uses an event-driven renderer and is not cycle-perfect."
+}
