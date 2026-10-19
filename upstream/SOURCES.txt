@@ -1,0 +1,25 @@
+Pinned upstream references for Version 04
+
+NESRecomp v0.2.0
+Repository: https://github.com/mstan/nesrecomp
+Release: https://github.com/mstan/nesrecomp/releases/tag/v0.2.0
+Expected release commit prefix: 2e271cf
+Role: static 6502-to-C architecture, runner and mapper research reference
+License: PolyForm Noncommercial 1.0.0
+
+MesenCE 2.2.1
+Repository: https://github.com/nesdev-org/MesenCE
+Release: https://github.com/nesdev-org/MesenCE/releases/tag/2.2.1
+Expected release commit prefix: 20ba206
+Role: independent development oracle only, never the production runtime or builder
+License: GPL-3.0
+
+NESdev Wiki
+Pages used: APU, APU register map, pulse, triangle, noise, length counter and MMC3 IRQ behaviour.
+Role: hardware research.
+
+Double Dragon III documentation
+Sources used: GameFAQs walkthrough/control guides and World of Nintendo manual transcription.
+Role: input-scenario and future gameplay-route planning.
+
+These are historical development references. Development fetch and verification tools are excluded from this production source package. The game ROM is never fetched or packaged.

@@ -1,0 +1,9 @@
+/build/
+/test-results/
+/settings.ini
+/Snapshots/*.dd3state
+/Screenshots/*.bmp
+*.nes
+*.pdb
+*.obj
+*.lib

@@ -1,0 +1,6 @@
+Double Dragon III NES Static Recomp 1.0.0
+
+SDL3 3.4.10 is statically linked. Its license is in third_party/SDL-LICENSE.txt and is included beside Launcher.exe in the release.
+SDL_GameControllerDB mappings are included as gamecontrollerdb.txt. Their license is third_party/SDL_GameControllerDB-LICENSE.txt and is included in the release.
+The game ROM is supplied externally and is not distributed.
+Original project and historical upstream notices are retained in licenses/PROJECT-NOTICE.txt and upstream/SOURCES.txt. This package does not invent an additional project-wide license grant.

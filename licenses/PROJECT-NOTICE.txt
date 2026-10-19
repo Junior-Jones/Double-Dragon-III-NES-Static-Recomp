@@ -1,0 +1,7 @@
+Double Dragon III NES Static Recomp Version 01 project notice
+
+No game ROM or game asset is included. The user must supply a lawfully obtained external ROM to run the application.
+
+Generic support code was adapted from existing example projects. No new project-wide public license grant is asserted by this package.
+
+NESRecomp is separately licensed under PolyForm Noncommercial 1.0.0 at the historical pinned upstream. MesenCE is separately licensed under GPL-3.0. Neither upstream source tree, development tool nor oracle executable is bundled in this portable source package. Historical references are recorded in upstream/SOURCES.txt.
