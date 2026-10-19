@@ -39,7 +39,17 @@ From the source folder, run:
     cmake -S . -B build -G "Visual Studio 17 2022" -A x64
     cmake --build build --config Release --target dd3-windows-launcher
 
-The executable and runtime files are written to build/Release. SDL3 and the Microsoft C/C++ runtime are statically linked; no separate SDL DLL or Visual C++ redistributable is required.
+The executable and runtime files are written to build/release. SDL3 and the Microsoft C/C++ runtime are statically linked; no separate SDL DLL or Visual C++ redistributable is required.
+
+## Automated build and package verification
+
+The Windows ROM-free build workflow runs on pushes, pull requests and manual dispatch using Windows 2022, MSVC x64 and the same hash-pinned SDL3 source archive as local builds. It uploads only the verified portable output as a short-lived CI artifact; it does not publish a release. The build and verification do not require a ROM.
+
+After building, run the same package check locally from PowerShell:
+
+    ./scripts/verify-windows-package.ps1 -PackagePath build/release
+
+The check requires the documented runtime file list, byte-identical documentation, controller mappings and third-party notices, and an AMD64 Windows executable. Unexpected files or directories fail verification, including ROMs, settings, snapshots, screenshots and build intermediates. Use a clean output folder before packaging. This verifies build/package integrity only; it does not establish gameplay coverage or completion.
 
 ## Current status
 
