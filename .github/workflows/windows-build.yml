@@ -1,0 +1,34 @@
+name: Windows ROM-free build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Configure MSVC x64
+        run: cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+      - name: Build portable Release
+        run: cmake --build build --config Release --target dd3-windows-launcher --parallel 2
+      - name: Verify portable package (no ROM required)
+        run: ./scripts/verify-windows-package.ps1 -PackagePath build/release
+      - name: Upload verified portable files
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: Double-Dragon-III-windows-x64
+          path: build/release/
+          if-no-files-found: error
+          retention-days: 14
