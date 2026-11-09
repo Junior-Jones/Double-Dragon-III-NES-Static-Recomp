@@ -33,5 +33,8 @@
       "url": "https://github.com/Junior-Jones/Double-Dragon-III-NES-Static-Recomp/releases/tag/v1.0.0"
     }
   ],
-  "notes": "Version 1.0.0 is a portable Windows x64 release with two-player input, live video and audio, snapshots and screenshots. Core coverage reaches the Mission Four transition. Missions Four and Five and the endings are not yet confirmed complete. Audio uses an event-driven renderer and is not cycle-perfect."
+  "notes": "Version 1.0.0 is a portable Windows x64 release with two-player input, live video and audio, snapshots and screenshots. Core coverage reaches the Mission Four transition. Missions Four and Five and the endings are not yet confirmed complete. Audio uses an event-driven renderer and is not cycle-perfect.",
+  "tags": [
+    "Beat 'em up"
+  ]
 }
